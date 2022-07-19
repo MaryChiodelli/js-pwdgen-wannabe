@@ -7,6 +7,9 @@ const userSurname = prompt('Qual\'è il tuo cognome?');
 // chiedi all’utente il suo colore preferito
 const userColor = prompt('Qual\'è il tuo colore preferito?');
 
-// scrivi sulla pagina nomecognomecolorepreferito21
+// genera un numero random che va da 1 a 100
+const randomNumber = Math.floor( Math.random() * 100 ) + 1;
+
+// scrivi sulla pagina nomecognomecolorepreferitonumerorandom
 const title = document.getElementById('title');
-title.innerHTML = userName + userSurname + userColor + 21;
+title.innerHTML = userName + userSurname + userColor + randomNumber;
